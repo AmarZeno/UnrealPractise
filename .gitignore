@@ -71,3 +71,4 @@ BuildingEscape/Content/StarterContent
 .ctrlp_cache/
 
 *.db
+*.opendb
