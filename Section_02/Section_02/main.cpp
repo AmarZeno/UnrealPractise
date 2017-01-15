@@ -10,11 +10,12 @@ bool AskToPlayAgain();
 
 // the entry point for our application
 int main() {
-
-	PrintIntro();
-
-	PlayGame();
-	cout << AskToPlayAgain();
+	bool bPlayAgain = false;
+	do {
+		PrintIntro();
+		PlayGame();
+		bPlayAgain = AskToPlayAgain();
+	} while (bPlayAgain);
 	return 0;
 }
 
